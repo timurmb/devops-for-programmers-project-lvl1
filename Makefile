@@ -9,3 +9,6 @@ compose:
 
 compose-override:
 	docker-compose up
+
+build:
+	docker build -f Dockerfile.production -t timurmb/devops_project1 .
