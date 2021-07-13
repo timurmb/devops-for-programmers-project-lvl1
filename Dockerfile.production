@@ -2,17 +2,16 @@ FROM node:14.6
 
 WORKDIR /app
 
+COPY ./app .
+COPY ./tests ./tests
+COPY ./Makefile .
+
 # Важно для кеширования слоев
-COPY ./app/package.json package.json
-COPY ./app/package-lock.json package-lock.json
+# COPY ./app/package.json package.json
+# COPY ./app/package-lock.json package-lock.json
 
 RUN npm install
 RUN npm install --save-dev jest
 RUN npm install pg
-
-COPY ./app .
-COPY ./tests ./tests
-COPY ./Makefile .
-COPY ./.env .
 
 # CMD npm start

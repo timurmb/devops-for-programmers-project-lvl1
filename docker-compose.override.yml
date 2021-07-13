@@ -11,7 +11,6 @@ services:
       - ./app:/root/app
       - ./tests:/root/app/tests
       - ./Makefile:/root/app/Makefile
-      - ./.env:/root/app/.env
 
   caddy:
     image: caddy
