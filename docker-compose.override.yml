@@ -7,10 +7,10 @@ services:
     command: npm start
     ports:
       - "8080:8080"
-    volumes:
-      - ./app:/root/app
-      - ./tests:/root/app/tests
-      - ./Makefile:/root/app/Makefile
+    # volumes:
+    #   - ./app:/root/app
+    #   - ./tests:/root/app/tests
+    #   - ./Makefile:/root/app/Makefile
 
   caddy:
     image: caddy
