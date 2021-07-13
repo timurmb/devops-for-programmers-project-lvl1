@@ -4,9 +4,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: nodos server -h 0.0.0.0
+    command: npm start
     ports:
       - "8080:8080"
+    volumes:
+      - ./app:/root/app
+      - ./tests:/root/app/tests
+      - ./Makefile:/root/app/Makefile
+      - ./.env:/root/app/.env
 
   caddy:
     image: caddy

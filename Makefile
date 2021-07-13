@@ -2,7 +2,7 @@ server:
 	npx nodos server
 
 test:
-	npm -s test
+	npx jest ./tests/root.test.js
 
 ci:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit
