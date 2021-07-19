@@ -1,6 +1,3 @@
-server:
-	npx nodos server
-
 test:
 	npx jest ./tests/root.test.js
 
