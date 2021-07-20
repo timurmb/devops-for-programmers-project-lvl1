@@ -7,8 +7,17 @@
 ### Docker-hub container link:
 https://hub.docker.com/r/timurmb/devops_project1
 
-### build production image and run tests:
+### Quick start:
+create `.env` file and set environment variables as it described in `.env.example`
+
+build production image and run tests:  
 `make ci`
 
-### run app in development mode:
+run app in development mode:  
 `make compose-override`
+
+OR
+
+use `.env.example` variables directly:  
+`make ci-example`  
+`make compose-override-example`
