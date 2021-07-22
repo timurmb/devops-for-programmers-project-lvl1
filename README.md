@@ -8,16 +8,16 @@
 https://hub.docker.com/r/timurmb/devops_project1
 
 ### Quick start:
-create `.env` file and set environment variables as it described in `.env.example`
-
-build production image and run tests:  
-`make ci`
-
+1. clone the project from the repository  
+2. run `npm install` inside `/app` directory  
+3. create `.env` file inside project directory and set environment variables as it described in `.env.example`
+4. build production image and run tests:  
+`make ci`  
+or  
 run app in development mode:  
-`make compose-override`
-
-OR
-
+`make compose-override`  
+--  
+you can also 
 use `.env.example` variables directly:  
 `make ci-example`  
 `make compose-override-example`
