@@ -1,5 +1,5 @@
 FROM node:14.6
 
-WORKDIR /app
+WORKDIR /root/app
 
 # CMD make test
