@@ -11,9 +11,9 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - "./app:/app"
-      - "./tests:/app/tests"
-      - "./Makefile:/app/Makefile"
+      - ./app:/app
+      - ./tests:/app/tests
+      - ./Makefile:/app/Makefile
     environment:
       - DATABASE_HOST=${DATABASE_HOST}
       - DATABASE_NAME=${DATABASE_NAME}
