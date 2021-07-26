@@ -9,7 +9,8 @@ https://hub.docker.com/r/timurmb/devops_project1
 
 ### Quick start:
 1. clone the project from the repository  
-2. run `npm install` inside `/app` directory  
+2. install dependencies:  
+`make install-deps`  
 3. create `.env` file inside project directory and set environment variables as it described in `.env.example`
 4. build production image and run tests:  
 `make ci`  

@@ -13,3 +13,6 @@ compose-override-example:
 
 build:
 	docker build -f Dockerfile.production -t timurmb/devops_project1 .
+
+install-deps:
+    docker-compose run app npm install
