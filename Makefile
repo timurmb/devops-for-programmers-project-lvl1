@@ -16,3 +16,6 @@ build:
 
 install-deps:
 	docker-compose run app npm install
+
+create-env-file:
+	test -d "./.env" || cp .env.example .env

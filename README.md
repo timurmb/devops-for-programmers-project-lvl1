@@ -11,7 +11,8 @@ https://hub.docker.com/r/timurmb/devops_project1
 1. clone the project from the repository  
 2. install dependencies:  
 `make install-deps`  
-3. create `.env` file inside project directory and set environment variables as it described in `.env.example`
+3. create `.env` file:  
+`make create-env-file`
 4. build production image and run tests:  
 `make ci`  
 or  

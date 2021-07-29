@@ -14,12 +14,8 @@ services:
       - ./app:/app
       - ./tests:/app/tests
       - ./Makefile:/app/Makefile
-    environment:
-      - DATABASE_HOST=${DATABASE_HOST}
-      - DATABASE_NAME=${DATABASE_NAME}
-      - DATABASE_USERNAME=${DATABASE_USERNAME}
-      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
-    container_name: app_dev 
+    env_file:
+      - .env    
 
   caddy:
     image: caddy
@@ -29,9 +25,5 @@ services:
       - "443:443"
     volumes:
       - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
-      # - $PWD/site:/srv
-      # - caddy_data:/data
-      # - caddy_config:/config
-    container_name: caddy_dev 
     depends_on:
       - app
