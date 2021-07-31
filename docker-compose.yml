@@ -8,8 +8,6 @@ services:
     ## check build+image condition here: 
     ## https://docs.docker.com/compose/compose-file/compose-file-v3/#image
     command: make test
-    env_file:
-      - .env.example
     depends_on:
       - db
   
