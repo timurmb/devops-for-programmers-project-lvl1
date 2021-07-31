@@ -8,6 +8,11 @@ services:
     ## check build+image condition here: 
     ## https://docs.docker.com/compose/compose-file/compose-file-v3/#image
     command: make test
+    # environment:
+    #   - DATABASE_HOST=${DATABASE_HOST}
+    #   - DATABASE_NAME=${DATABASE_NAME}
+    #   - DATABASE_USERNAME=${DATABASE_USERNAME}
+    #   - DATABASE_PASSWORD=${DATABASE_PASSWORD}
     env_file:
       - .env
     depends_on:

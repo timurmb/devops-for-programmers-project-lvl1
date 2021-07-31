@@ -18,8 +18,3 @@ https://hub.docker.com/r/timurmb/devops_project1
 or  
 run app in development mode:  
 `make compose-override`  
---  
-you can also 
-use `.env.example` variables directly:  
-`make ci-example`  
-`make compose-override-example`
