@@ -15,7 +15,7 @@ services:
       - ./tests:/app/tests
       - ./Makefile:/app/Makefile
     env_file:
-      - .env    
+      - .env.example    
 
   caddy:
     image: caddy

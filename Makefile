@@ -2,11 +2,9 @@ test:
 	npx jest ./tests/root.test.js
 
 ci:
-	test -d "./.env" || cp .env.example .env
 	docker-compose -f docker-compose.yml up --abort-on-container-exit
 
 compose-override:
-	test -d "./.env" || cp .env.example .env
 	docker-compose up
 
 build:
